@@ -2,28 +2,53 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="k.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
 </head>
 
 <body>
-    <h1 style="font-size: 60px; text-align: center; color:antiquewhite; background-color: black;  margin: 0%;">
-        E-commerce</h1>
-    <nav
-        style="background-color: lightgrey; font-size: 40px; justify-content: space-around; display:flex; margin: 0%; ">
-        <p>home</p>
-        <p>products</p>
-        <p>contact</p>
+
+    <nav class="navb">
+        <div class="left">
+            <ul>
+                <li><a href="index.html">
+                        <img src="store-logo.png">
+                    </a> </li>
+                <li><a href="#">Our products</a></li>
+                <li><a href="#">Contact</a></li>
+                <input type="text" placeholder="best price for..">
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul>
+                <li> <a href="signup.html">Sign in</a></li>
+                <li><a>/</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </div>
+
     </nav>
     <main style="margin-left: 10px;">
-        <p>featured item:</p>
-        <p><img src="prod.jpg" /> </p>
-        <p style="font-weight: bold;"> Samsung 49inch</p>
-        <button> add to cart</button>
+        <div class="mm">
+            <div class="images">
+                <img style="background-color: lightgrey; width: 100px; height:100px;" src="electronics.png">
+                <img style="background-color: lightgrey;  width: 100px; height:100px;" src="jewelery.png">
+                <img style="background-color: lightgrey;  width: 100px; height:100px; " src="mensclothing.png">
+                <img style="background-color: lightgrey;  width: 100px; height:100px;" src="womensclothing.png">
+            </div>
+            <div class="textt">
+                <a href="#">electronis</a>
+                <a href="#">jewelery</a>
+                <a href="#">mensclothng</a>
+                <a href="#">womensclothing</a>
+            </div>
+        </div>
     </main>
-    <footer> 
-        Made by Mimis!
+    <footer class="footer">
+        <p>Made by Mimis!</p>
     </footer>
 
 
