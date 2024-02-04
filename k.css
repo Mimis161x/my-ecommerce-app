@@ -1,5 +1,5 @@
 nav {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: lightgray;
@@ -8,10 +8,15 @@ nav {
     align-items: center;
 }
 
-.navb li, .nava li {
+.navb li,
+.nava li {
     list-style: none;
     display: inline-block;
     padding: 0px 20px;
+}
+
+.navb {
+    margin-right: auto;
 }
 
 .nava {
@@ -21,7 +26,6 @@ nav {
 .body {
     margin: 0;
     padding: 0;
-    box-shadow: border-box;
     font-size: 1.7rem;
 }
 
@@ -43,7 +47,6 @@ nav {
 }
 
 .product {
-    overflow: hidden;
     background-color: aquamarine;
     text-align: center;
     width: 280x;
@@ -58,30 +61,77 @@ nav {
 }
 
 .box {
-    border:5px solid red;
+    border: 5px solid red;
     display: flex;
     flex-direction: column;
-    width:300px;
+    width: 300px;
     margin: 0 auto;
-    height:400px;
+    height: 400px;
     padding: 50px;
     margin-top: 50px;
     align-items: center;
 }
 
-.box input{
+.box input {
     padding: 10px;
     margin-bottom: 10px;
 }
+
 .box img {
     margin-bottom: 30px;
 }
 
 .footer {
     bottom: 0;
-    left:0;
+    left: 0;
     background-color: lightgray;
     text-align: center;
     position: fixed;
     width: 100%;
+}
+
+
+.fas {
+    display: none;
+    padding: 0%;
+    margin: 0%;
+    left: 100%;
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navb {
+        position: fixed;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 50%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navb:active {
+        left: 0%;
+    }
+
+    .navitem {
+        margin: 2.5rem 0;
+    }
+
+    .fas {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-container .navb {
+        display: none;
+    }
+
+    .menu-container:focus-within .navb {
+        display: block;
+    }
+
 }
