@@ -3,17 +3,21 @@
 
 <head>
     <link rel="stylesheet" href="k.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css&quot;"
-    rel= "stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
+    <script>
+    fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+        </script>
+
 </head>
 
 <body>
-
-
-
+    <script src="index.js" defer> </script>
+    
     <nav>
         <div class="menu-container">
             <button type="button" class="fas fa-bars burger-icon">Menu</button>
@@ -29,12 +33,13 @@
         </div>
 
         <ul class="nava">
+            <li><button type="button" onclick="notify()" class="fas fa-bell"></button></li>
             <li> <a href="signup.html">Sign in</a></li>
             <li><a href="signup.html">Sign up</a></li>
         </ul>
 
     </nav>
-    <main style="margin-left: 10px;">
+    <main>
         <div class="products">
             <div class="product">
                 <img src="electronics.png">
@@ -58,7 +63,7 @@
         <p>Made by Mimis!</p>
     </footer>
 
-
+    
 </body>
 
 </html>
